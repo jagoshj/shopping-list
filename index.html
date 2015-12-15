@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="app.js" type="text/javascript"></script>
+	<style type="text/css" media="screen, print">
+			@font-face {
+				font-family: 'VTCSuperMarketSaleSC';
+				src: url('font/VTCSuperMarketSaleSC.ttf');
+			}
+		</style>
+</head>
+<body>
+<header>
+		
+</header>
+<div class="background-img"></div>
+<section class="transparent-wrapper">
+<img class="shop"src="images/shop-head.png" alt="Shop" width="483px">
+<h2>Til You Drop!</h2>
+<div class="entry">
+	Enter Item Here:<input value="" type="text" maxlength="25" size="25" id="itemName" placeholder="Item Name"><br>
+	Price:  $<input value="" type="text" maxlength="6" size="6" id="itemPrice" placeholder="00.00">
+	Quantity: <input value="" type="text" maxlength="5" size= "5" id="itemQuantity" placeholder="Quantity">
+<input type="submit" maxlength="5" id="submitform" value="+">
+</div>
+<!--Items after input-->
+	<ul>
+		<li>
+			<span class="item-name">water</span>
+			<span class="item-price">2.00</span>
+			<span class="item-quantity">2</span>
+			<button class="checkbox"><img src="images/checkmark.png" width="25px"></button>	
+			<button class="delete"><img src="images/xmark.png" width="25px"></button>
+			<span class="sub-total">4.00</span>
+		</li>
+		<li>
+			<span class="item-name">milk</span>
+			<span class="item-price">3.50</span>
+			<span class="item-quantity">1</span>
+			<button class="checkbox"><img src="images/checkmark.png" width="25px"></button>	
+			<button class="delete"><img src="images/xmark.png" width="25px"></button>
+			<span class="sub-total">3.50</span>
+		</li>
+		<li>
+			<span class="item-name">eggs</span>
+			<span class="item-price">3.00</span>
+			<span class="item-quantity">1</span>
+			<button class="checkbox"><img src="images/checkmark.png" width="25px"></button>	
+			<button class="delete"><img src="images/xmark.png" width="25px"></button>
+			<span class="sub-total">3.00</span>
+		</li>
+	</ul>
+	<br>
+	<div class="grandtotal">
+	Total:<span class="grand-total">0.00</span>
+	</div>
+</section>
+</body>
+</html>
