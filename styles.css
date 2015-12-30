@@ -1,5 +1,5 @@
-/* CSS reset 
-	(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+/* CSS reset
+    (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
 */
 
 * {
@@ -9,32 +9,39 @@
     font-size: 100%;
 }
 
-/* General styles 
-	(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+
+/* General styles
+    (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
 body {
     color: black;
     font-family: 'VTCSuperMarketSaleSC';
 }
+
 p {
     font-size: 15px;
 }
-h2{
-	font-size: 40px;
-	margin-left: 220px;
-	margin-top: -28px;
+
+h2 {
+    font-size: 40px;
+    margin-left: 220px;
+    margin-top: -28px;
 }
-/* Header styles 
-	(all the styles inside the < header > or < nav > tags) 
+
+
+/* Header styles
+    (all the styles inside the < header > or < nav > tags)
 */
 
-/* Content styles 
-	(all the styles inside the < sections > or < aside > tags)
+
+/* Content styles
+    (all the styles inside the < sections > or < aside > tags)
 */
+
 .background-img {
     background: url("images/background.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: top center;
     display: block;
@@ -46,43 +53,58 @@ h2{
     padding: 0;
     margin: 0;
 }
+
 .transparent-wrapper {
-	width: 32rem;
-	height: auto;
-	opacity: 0.8;
+    width: 32rem;
+    height: auto;
+    opacity: 0.8;
     background-image: url("images/transparent2.jpg");
     border-radius: 0.5rem;
     padding: 2rem;
     border: 1px solid gray;
     margin-left: auto;
     margin-right: auto;
+}
 
-}
 .shop {
-	margin-left: 20px;
-	margin-top: -30px;
+    margin-left: 20px;
+    margin-top: -30px;
 }
+
 .entry {
-	font-size: 20px;
-	display: inline-block;
-	width: 483px;
-	margin-left: 75px;
-	margin-right: auto;
+    font-size: 20px;
+    display: inline-block;
+    width: 483px;
+    margin-left: 75px;
+    margin-right: auto;
 }
+
 ul {
-	display: inline-block;
-	list-style: none;
-	margin-left: 75px;
+    display: inline-block;
+    list-style: none;
+    margin-left: 75px;
 }
+
 .grandtotal {
-	font-size: 20px;
-	float: right;
+    font-size: 20px;
+    float: right;
 }
-/* Footer styles 
-	(all the styles inside the < footer > tag)
+
+.ticked {
+    text-decoration: line-through;
+    color: green;
+}
+
+span {
+    padding: 10px;
+}
+
+
+/* Footer styles
+    (all the styles inside the < footer > tag)
 */
 
 
-/* Responsive styles 
-	(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+/* Responsive styles
+    (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 */
