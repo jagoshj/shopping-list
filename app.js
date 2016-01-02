@@ -28,7 +28,7 @@ function addItem() {
         //empty the input box after submit by reseting the value
         var itemName = $('#itemName').val('');
         var itemPrice = $('#itemPrice').val('');
-        var itemQuantity = $('#itemQuantity').val('2');
+        var itemQuantity = $('#itemQuantity').val('');
         var grandTotal = $('#grandTotal').val('.sub-total')
     }
 }
@@ -68,10 +68,8 @@ $(document).ready(function () {
     });
     //on click on the "#submitForm" button fire the action called addItem()
     $('#submitForm').on('click', addItem);
-    //on click on the "#.checkbox" button fire the action called checkItem()
-    $('.checkbox').on('click', checkItem);
-    //on click on the ".delete" button fire the action called deleteItem()
-    $('.delete').on('click', deleteItem);
+
+
     //on click on the "#deleteAll" button fire the action called deleteAll()
     $('#deleteAll').on('click', deleteAll);
     //enter key to add list items
@@ -82,3 +80,7 @@ $(document).ready(function () {
         }
     });
 });
+//on click on the "#.checkbox" button fire the action called checkItem()
+$(document).on('click', '.checkbox', checkItem);
+//on click on the ".delete" button fire the action called deleteItem()
+$(document).on('click', '.delete', deleteItem);
